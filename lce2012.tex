@@ -1,0 +1,436 @@
+\documentclass[10pt]{article}
+
+\setlength{\oddsidemargin}{-0.25in} % Left margin of 1 in + 0 in = 1 in
+\setlength{\textwidth}{7in}   % Right margin of 8.5 in - 1 in - 6.5 in = 1 in
+\setlength{\topmargin}{-.75in}  % Top margin of 2 in -0.75 in = 1 in
+\setlength{\textheight}{9.2in}  % Lower margin of 11 in - 9 in - 1 in = 1 in
+
+\renewcommand{\baselinestretch}{-1}
+\begin{document}
+
+\section{Common}
+\subsection{Importance of Linux at Intel - Imad Sousou, Director of OTC at Intel}
+\begin{itemize}
+\item Imad Sousou, Director of OTC, Intel pic.twitter.com/WFFKQmCH
+\item Intel heavy invests in W3C \& APIs - for example NFC API
+\item Intel OSS - http://01.org
+\end{itemize}
+
+\subsection{Forward-Looking Development: The Next Evolution in Enterprise Linux Software Development - Ralf Flaxa, VP of Engineering at SUSE}
+\begin{itemize}
+\item  Rafl Flaxa, VP of Enineering, Suse pic.twitter.com/33nbLd9u
+\item Ralf Flaxa: Talking as a Linux community dinasour - sharing his experience in Linux 
+\item  21 years ago communications: E-Mail, FTP, newsgroup
+\item Rafl Flaxa: "We work for different companies but we have the same spirit - we are one big Linux family" 
+\item Rebase with legacy support 
+\item Ralf Flaxa: "Forward looking development is a new model for enterprise Linux" 
+\end{itemize}
+
+\subsection{Research Into Open Hardware - Catarina Mota, Founder at openMaterials
+\begin{itemize}
+\item Not all would be software. Catarina Mota speaking about Open Hardware on Electronics
+\item "The Global Village Construction Set" - using open hardware to build a city. Interesting concept presented by Mota. 
+\item OSHWA - Open Source Hardware Association
+\item "Arduino is the main brain of open hardware" used by "backyard brains" to change the world @openmaterials Catarina Mota at 
+\item OSHW: It's more compliated than software, it's not only distribute the 2d schema. . . 
+\item OSHW: 3d Printers printing pieces for make 3d printers awesome!!  They make himselfs
+\end{itemize}
+
+\subsection{Linux: Where Are We Going - Linux Creator Linus Torvalds and Intel's Chief Linux and Open Source Technologist, Dirk Hohndel}
+\begin{itemize}
+\item  Somebody tries to improve the world through linux - but not I (c) Linux
+\item  If company says that they want make billion of \$ - I don't care (c) Linus
+\item  Most interesting things - that something what I didn't expect (c) Linus
+\item "I do Linux for other people in the sense that I like the community," says Linus.  Europe
+\item Linus Torvalds: "I don't know what you guys are interested in." Audience member shouts: "NVIDIA!" 
+\item  In linux kernel development we like argue.
+\item For the kernel the direction has always come from outside. Linus. 
+\item Linus Torvalds: Im not worring about the future but mantain it open all this. Legal Situations, Patents. 
+\item The patent system is just broken, says Linus @ 
+\item Linus: "Occasionally I worry about hardware companies..." 
+\item Linus Torvalds: I mostly worry about kernel developers conflicts and the broken patent system
+\item Linux: We had huge issues initially with the embedded software companies 
+\item Linus Torvalds: Daily builds and tests been making but we don't have all the hardware to test it. 
+\item Linus Torvalds: The lockdown of the mobiles systems make difficult to work with this embedded systems kernels. 
+\item Linus: "I'm so pleased with what has happened in the ARM community in the last two years" 
+\item Many questions resolving around the needs of embedded systems and supposedly too high frequency of changes in kernel 
+\item Linus: "I don't think there's a lot of innovation in OSes that's worth doing" 
+\item " not a lot of innovations that need doing in the OS space" says Linus ;) 
+\item Linus - "sometimes the old ways are the correct ways" re op systems at 
+\item There is a high threshold for removing code from the kernel, says Linus.  Europe
+\item Linus: "In general we do not remove code [ from the kernel ] unless it has major problems" 
+\item android situation is better now, than a year ago (c) Linus
+\item Linus Torvalds: There are some vendors making wrong forks to work 
+\item The Android "situation" is no different than the Red Hat or SUSE "situation" 10 years ago, says Linus.  Europe
+\item Linus Torvalds: Google people are given the code from android tree but not all are been getting 
+\item Google has one hundred million devices running their code. They must be doing something right. Linus. 
+\item Linus Torvalds: we are all older but there is a lot of people from the university comming and working as professional 
+\item Linus: "Actually performance vs. power is often not a versus" 
+\item Linus at : "We are 99\% male and 1\% female in the community. Nobody knows why".
+\item  We have no plan, but everybody is happy (c) Dirk
+\item You can read all the Q\&A between Linus Torvalds and the  Europe audience from today's keynote here: http://bit.ly/SB2uzj
+\end{itemize}
+
+\section{System}
+\subsection{FreeIPA, Jakub Hrozek / Alexander Bokovoy, Red Hat Open Source}
+\begin{itemize}
+\item FreeIPA is an integrated security information management solution
+\item FreeIPA integrated with Microsoft Active Directory "out-of-the box"
+\item FreeIPA heavy rely on working DNS during install
+\item FreeIPA identification server should be heavy secured - its your Security SPOF
+\item Kerberos deployment is a fully management Kerberos realm
+\item allow AD user to connect to FreeIPA services, todo: allow FreeIPA users to interactively log in into AD machines
+\item missing now: CLDAP plugin to FreeIPA to respond on AD discovery quries, KDC backend to generate MS PAC
+\item FreeIPA provides smbd, not for sharing (you still can), but for LSA (Local Security Authority)
+\item FreeIPA provides nice Web UI configuration/management tool
+\end{itemize}
+
+\subsection{New Challenges for Linux Network Support - Marcel Holtmann}
+\begin{itemize}
+\item Enteprise wants better Ethernet, People wants better wireless
+\item on mobile side, we have small tools for too many tasks
+\item linux now good at ethernet, wifi personal/enterprise, GSM..LTE, DHCP, IPv4, IPv6, DNS, NTP
+\item including tethering, firewall setips, network switching, WISPr
+\item New Challenges: Am I actually online? (locally connected vs connected to Internet)
+\item ConnMan do "online checking" on global level
+\item Every application has different connectivity needs
+\item Waking all apps at the same time (when you becomes online) is a really bad idea
+\item Even more: mobile devices want different policies for each application
+\item Currently Linux haven't grained usage statistics (per app, per user, per interface).
+\item It will be nice, to be able say application to use internet, only on wifi connection, and ban mobile just for one app
+\item system should not only sync time, but also timezone
+\item Marcel Holtmann, Intel pic.twitter.com/5tYwxonT
+\item sometimes even per application routing tables are required
+\item what about Exclusive usage of VPN? one more thing, which will be nice to have
+\item Network connections are global, VPN, Bluetooth tethering - are global
+\item netfilter subsystem is too static, its hard to implement firewall policies depending on user/place/app
+\item Wifi offload - its hard to automate cases with switching connections to public network with security
+\item Bluetooth support pairing via NFC, Wifi support is coming
+\item Sensors Network: 802.15.4 and 6LoWPAN is a reality
+\item systemd and cgroups will be mandatory for a good mobile networking experience
+\end{itemize}
+
+\subsection{Linux Kernel Report - Jon Corbet, Editor at http://LWN.net}
+\begin{itemize}
+\item Jon Corbet, Editor, http://LWN.net  pic.twitter.com/yBC3vYZO
+\item Linux Kernel: Volunteer participation going down, enterprise participation up
+\item Companies are very good for hiring kernel hackers...
+\item Very positive trend that embedded companies are contributing back to the Linux kernel ecosystem
+\item High level of kernel contribution from mobile and embedded players
+\item All what is happened in a world with network - happened in Linux
+\item Linus main role - is showing attention
+\item big.LITTLE - few slow, but power efficient and fast, but big power consumer - cpus on one SoC
+\item ext4 still the workhorse filesystem and getting new features
+\item btrfs continued stabilization plus send/receive, raid5/6 still waiting
+\item F2FS - Flash-friendly filesystem (high performance on NAND flash)
+\item CPU scheduler: NUMA scheduling, Power-aware scheduling
+\item Kernel problems tend to be: hardware/workload dependent => hard to find automatically => That is what users are for
+\item kernel regressions are most important bugs
+\item I'm not worried about... The health of Linux as a whole (c) Jon
+\end{itemize}
+
+\subsection{Video4Linux2: Path to a Standardized Video Codec API - Kamil Debski, Samsung}
+\begin{itemize}
+\item Kamil Debski, Samsung pic.twitter.com/cDB1uNHV
+\item Linux SoC codec libraries OpenMAX, VA API by Intel, VDPAU by Nvidia
+\item V4L2 supports TV tuners, webcams, video capture, output devices
+\item memory-to-memory (m2m) devices presents - enables support for video filters, codecs as filters
+\item V4L2 Codec API: m2m, multiplanar API, Videobuf2; extensions: h264, h264, mpeg4
+\item How to get started with a video coder driver: exisiting codecs in V4L2, flick through other m2m devices
+\item successes: API merged in mainline kernel, more hardware video uses V4L2, ARM Chromebook uses V4L2 codec API
+\end{itemize}
+
+\subsection{Status of Linux Tracing - Elena Zannoni, Oracle}
+\begin{itemize}
+\item The Tree of Tracing: ftrace, SystemTap, LTTng, perf, GDB, DTrace
+\item Uprobes: Dynamic Userspace Tracing
+\item Elena Zannoni, Oracle pic.twitter.com/sXFGx63x
+\item Uprobes described as inode, offset in file, list of associated actions, arch specific info
+\item Uprobes status: x86, x86\_64(3,5/3.6), powerpc(3.7), ARM(wip)
+\item perf/ftrace/systemtap support for uprobes presents
+\item Ftrace have many plugins: Function*, Wakeup, Irqoff, Nop...
+\item /sys/kernel/debug/tracing/kprobes\_events and /sys/kernel/debug/tracing/uprobes\_events - for CLI control
+\item Perf list, annotate, lock, sched, kvm
+\item Ftrace-cmd - user space tool, many options, very flexible: record, report, start, stop, extract, list...
+\item LTTng - included in embedded Linux distributions
+\item SystemTap (Red Hat, IBM, others) - can use debuginfo, dynamic probes and tracepoints, has well defines rich scripting language...
+\item DTrace on Linux: solaris tool, porting with goal to support DTrace scripts for Solaris
+\item DTrace integrated with Oracle Unbreakable Enterprise Kernel
+\item DTrace provider, syscall prvider, SDT, Profile provider, Proc provider, x86\_64 only, Kernel changes - GPL, Kernel modules (CDDL)
+\item Tracing: General Open Issues: KABI, Scalability, Code Injection, Embedded community
+\end{itemize}
+
+\subsection{DRM/KMS, FB and V4L2: How to Select a Graphics and Video API - Laurent Pinchart, Ideas on Board}
+\begin{itemize}
+\item Origins: fbdev, Linux 1,3,94 in 1996, Blanking in 2000, 4CC Formats in 2012
+\item Origins: DRM Linux 2.2.16 in 2000, GEM in 2008, KSM/TTM in 2009, Dumb Buffers on 2011, Planes, DMABUF in 2012
+\item V4L2 in Linux 2.4.0 in 2002, V4L2 subdev in 2008, Media contoller videobuf2 in 2011, DMABUF(?) in 2013
+\item there is no any reason to write fbdev drivers nowadays, DRM have full superset of features now
+\end{itemize}
+
+\subsection{Optimizing File System Performance When Memory is Tight - Theodore Ts'o, Google}
+\begin{itemize}
+\item ext4 new features: Punch system call; Metadata checksumming
+\item ext4 - "Modern" file system that still reasonable simple
+\item ext4 - Incremental devlopment instead of "rip and replace"
+\item ext4 well understood performance metrics
+\item ext4 disadvantages: fixed inode table, bitmap allocations, 32bit inode numbers
+\item ext4 RAID support is extremely weak, lack of sexy new features
+\item Ext4 - Default File System for Desktop/Server (distros can change it in near feature)
+\item Android devices (Hoeycomb / Ice Cream Sandwich) - use ext4
+\item ext4 "is common" in cloud storage servers
+\item The economics of cloud computing - run many tasks on single server - memory becomes a bottleneck
+\item Restricted memory means less caching available
+\item CPU can be a problem too, for PCIe attached flash / trasnscoding video
+\item ZFS Open Solaris list suggest 8Gb RAM jusr *for filesystem*
+\item Avoiding latency makes the users happy, a few slow requests slow requests behind them
+\item Google tests FS with focus on latency, not on avg performance
+\item Don't pay for features you don't need - no journal mode for ext4 in Google
+\item A lot of metadata caching have done in ext4
+\item ext4 sparce files improvements are coming; inline data; raid stripe awareness; atomic msync
+\item Conclusion: Remember to optimize the entire storage stack: thin-provisioned snapshots, dm-cache/bcache; optimize userspace
+\end{itemize}
+
+\subsection{Rygel: Open Source DLNA, ready for Customer Products? - Jens Georg, Openismus GmbH}
+\begin{itemize}
+\item .. smth good which comes from MeeGO Disaster
+\item UPnP(-AV) Technology \& Devices and Services
+\item DLNA - vendor independent. set of media formats, on top UPnP-AV
+\item Rygel - UPnP Rendereer and AV-server
+\item DLNA picky on calling Rygel DLNA-compatible. Funny guys, my certified Hifi equipment fails quite often 
+\item 9h Pieter Hollants @pfhllnts
+\item Rygel aims to: Be small, works out-of-the-box
+\item Nokia's N9 Smartphone - certified
+\item Rygel+DLNA have upload feature
+\item Rygel have Media server and renderer plugins
+\item SDK: librygel-server/renderer/render-gst
+\end{itemize}
+
+\section{Resource Management}
+\subsection{Resource Isolation: The Failure of Operating Systems \& How We Can Fix It - Glauber Costa, Parallels}
+\begin{itemize}
+\item Glauber Costa, Lead Software Developer, Parallels pic.twitter.com/fJtUqjmw
+\item history books tell us that back in the day, a computer ran a single program (c) Glauber
+\item VM may page out or give less CPU for your app, that you need
+\item "forking" app (in sum) gets more CPU than single-thread app
+\item Easy DOS: \$ whole true; do mkdir x; cd x; done Will consume all memory before any disk quota can kick in
+\item hupervizors(KVM as example) fixes this resource isolation: 1. fair memory 2. N:1 CPU mapping
+\item But typical user wants run web, mail servers, databases - to many Virtual Machines for fair resource isolation
+\item but sometimes users wants run different versions of Linux for some apps. Solution - containers
+\item containers, network namespaces: 40 processes connected to port 80? No problem
+\item unique IP, raw devices for each group, per app packet filtering
+\item mount namespaces, user namespaces (more that one "root" user in the system)
+\item cgroups allows you logical grouping of processes. systemd is heavy uses it
+\item CRIU - Checkpoint/Restore complex processes mostly with userspace code, with the aid of some new infrastructure in the kernel
+\item cpu/memory controller can do not only fair resource isolation, but also isolation
+\item containers, today: openvz - stable, secure and mature Open Source, alternative - LXC, but its still not production ready
+\item Work Status: all works: cgroups, CPU, network; need improvements: user/mount/pid/blockIO/CR namespaces
+\item To be merged: fork bomb prevention, group-aware kernel memory, filesystem; specialized loop device
+\item containers tools: libvirt, vzctl, systemd, etc
+\item Note vzctl >= 4.0 works with both OpenVZ and upstream kernels RT containers tools: libvirt, vzctl, systemd, etc
+\item kmem controller is already in Andrew Morton's -mm tree
+\end{itemize}
+
+\subsection{Systemd: The First Two Years - Lennart Poettering, Red Hat}
+\begin{itemize}
+\item Lennart Poettering, Red Hat,  pic.twitter.com/9BtOeFQ7
+\item systemd is a default in most distributions, included in others as optional
+\item systemd community quite a big 15/374 commiters/contributers
+\item systemd can now boot system shell-free
+\item systemd can boot system in less than 1 second
+\item systemd is a Init System; systemd is a Platform
+\item systemd: PID 1 does Unit Control Basic Set of Auxiliary Services do the rest
+\item systemd loves Embedded hackers, but Lennart personally won't hack embedded features (I asked Q: systemd busybox status)
+\item systemd intergrated with dracut, udev, D-Bus, Plymouth, Gummiboot
+\item systemd focus on movile, embedded, desktop, server
+\item when people brings patches to systemd to support uclibc, in most cases its better to implement such features in libc
+\item obsoltes: ConsoleKit, sysvint, initscripts, pm-utils, inted, acpid, syslog, watchdog, cgrulesd. Later on: cron, anacron, atd
+\item systemd control PM (power button, led) only util other program (Gnone/KDE) says: "No I control the buttons"
+\item systemd: Bring back Unix:Multi-Seat, Services as a File, Set of componenets that are integrated yet separate
+\item The Journal Structured, Indexed, Secure, Reliable, Modern, ...
+\end{itemize}
+
+\subsection{Checkpoint and Restore: Are We There Yet? - Pavel Emelyanov, Parallels}
+\begin{itemize}
+\item C/R helps with Live migration / reboot-less kernel update
+\item less popular scenario: start-up boost, working enviroment snapshots, HPC loadbalancing
+\item OpenVZ could do live migration since 2005 (implemented 100\% in kernel)
+\item OpenVZ(Parallels?) failed to upstream their work - they working on it since 2008 to 2010
+\item Next idea - reimplement work in usespace, and improve kernel interfaces
+\item CRIU ultimate goal: any app -> dump -> restore
+\item Exiting kernel APIs: proc, system calls (about self, about anybody), netlink
+\item But sometimes kernel could not answer correctly. Solution is obvious but not easy - just add required interfaces.
+\item CRIU - a project by various mad Russians to perform c/r mainly from userspace (c) Linus Torvalds
+\item CRIU kernel features: 1. parasite code injection (works similar to trace api, which gdb for example use)
+\item CRIU kernel features: 2. kcmp - check which kernel objects are shared between processes
+\item CRIU kernel features: 3. sockets dumping via netlink - externdable sockets retrive engline
+\item Pavel Emelyanov, Parallels pic.twitter.com/IYqhBNm3
+\item CRIU kernel features: 4. TCP repair mode
+\item CRIU improved: virtual net devices indexes, proc map\_files, socket peeking offset, more socket options
+\item CRIU features: x86\_64, process tree linkage, multi-thread, mmap, terminals, groups, sessions, open files, lxc, ...
+\item CRIU tests every API separately, but also have tests some big applications (apache, mysql, nginx, mongodb, ...)
+\item CRIU plans: Full OS resources coverage, vanilla kernel support, crtools integration with LXC and OpenVZ, live migration, speedup
+\item You can easy find CRIU in internet http://criu.org/Main\_Page 
+\item CRIU shoild write a FAQ, and first answer should be about security
+\end{itemize}
+
+\subsection{Lightweight Virtualization: LXC Best Practices - Christoph Mitasch, Thomas-Krenn.AG}
+\begin{itemize}
+\item Christoph Mitasch, Thomas-Krenn AG pic.twitter.com/MCIamHin
+\item Hardware Virtualization (Full, Para), Software Virtualization(containers)
+\item cgroups - the hearth of all Linux container virtualization techs
+\item cgroups /sys have "posix" interface - create cgroup with mkdir, change and attach with echo
+\item cgroups could hide "fork" bomb, from the used
+\item Kernel Namespaces is a "hands" for containers
+\item LXC have nice(easy to understand) tools in userspace
+\item LXC networking: no entry, empty, veth(bridge), vlan, macvlan, phys
+\item LXC + CRIU support is coming soon
+\item LXC is unsecure - "Don't give container root to someone you don't trust"
+\item ha-cluster of LXC could be done, with DRDB with LCMC, and activate lxc heartbeat
+\item rumors says, that you should use vzctl now with upstream kernel support, instead lxc
+\item lxc - test kill -PWR 1 initiates a proper shutdown
+\end{itemize}
+
+\subsection{Resource Management With Linux - Bruno Cornec, HP}
+\begin{itemize}
+\item Bruno Cornec, HP pic.twitter.com/VN0lOKhC
+\item DEMO will fail during presentation, because every DEMO fails during presentations
+\item resource isolation on 160 threads, 4TB RAM, dozen of disks
+\item HP do a lot for more NUMA performance in Linux, first patches merged in 2.6.16
+\item cgroups - Dedicated subsystems to manage specific resources: CPU shares, memory, blkio; CPU sets, ns, freezer, c/r
+\end{itemize}
+
+\section{Cloud}
+\subsection{Mark Shuttleworth, Founder, Canonical pic.twitter.com/MTnjvvHu}
+\begin{itemize}
+\item Mark speaking about importance of skale out
+\item Ubuntu is \#1 Cloud OS
+\item "We should focus on operation part of the Cloud" (c) Mark
+\item Ubuntu decision to be on every cloud, regardless of business \& philosophy obstacles, is smart. 
+\item DevOps hell pic.twitter.com/KZ9vSdZu
+\item Juju - is a tool, which helps escape from devops hell
+\item juju charm includes puppet chef ... python, perl and much more
+\item dev@laptop test@cloud deploy@metal
+\item Device in your pocket - is truly personal computer (c) Mark
+\item the way he explains it it will introduce us to management hell .. which tool is manageing what hell 
+\item Virtual Machine Management Costs becomes less than cost of managing Desktop PC
+\item Research.Design.Refine in order to lead, according to Mark Shuttleworth 
+\item Ubuntu have thin clients for web and windows apps
+\item Final words from Shuttleworth: In very short term, a common version of Linux will be avail on any class of device.
+\end{itemize}
+
+\subsection{Mostly Sunny: Why Evernote Runs Their Own Linux Servers Instead of "The Cloud" - Dave Engberg, CTO at Evernote}
+\begin{itemize}
+\item Evernote have about 400 linux servers
+\item Dave Engberg, CTO, Evernote pic.twitter.com/T4oHKOZd
+\item Public Cloud is a nice to start business, but later (if success) you should have own servers, or private cloud
+\item Evernote use Amazon S3 for static, other staff based on their servers
+\item Evernote use SSD on metadata servers
+\item Evernote: 10 tb mysql. 10 tb lucene. 380 tb apache httpd. 
+\item Evernote use WebDav (apache, mod\_dav) as internal protocol for your data
+\item Amazon* is good enough for 90-95\% sartups
+\item Evernote do calculations, going to private saves them about 75\% of costs (\$228k -> \$60k for compute + metadata task)
+\item "Cleverness is the enemy of stability." -Dave Engberg
+\item Evernote's CTO making the case for your own private cloud ... it's cheaper .. wasn't that obvious already 
+\item You should use cloud, unless you absolutely sure that you shouldn't (c) Dave, because of business risks
+\end{itemize}
+
+\subsection{Linux: At the Forefront - Brian Stevens, CTO and VP Worldwide Engineering at Red Hat}
+\begin{itemize}
+\item RedHat - 20 Years of Disruption
+\item The Red Hat Linux Model: fast upstream development, hardened into enterprise releases
+\item Is Open Source is a Business Model? - No, But i is the best *development* model (c) Brian
+\item Open Source defines architecture of IT (rails, mongodb, etc)
+\item Brian Stevens, CTO and VP Worldwide Engineering, Red Hat pic.twitter.com/sK4hgpOc
+\item Linux brings your application to ALL platforms
+\item The most successful opensource projects of the past and today created by users and developers, not just companies. - @addvin  EU
+\item RHEL certifies 17 clouds (in additional to 3000+ "hardwares")
+\item with OpenShift you can develop in Java, Ruby, P*, Node.js. Use git, Eclipse, or .. Web IDE
+\item Linux Application Stacks: Security from SELINUX, QoS from CGROUPS, LXC
+\item 100,000+ Active applications runs on OpenShift
+\item Linux is redefined Storage and Data, think about Gluster, Hadoop, Mongo..
+\item 80\% of data doesn't sit in a database. Volume of generated doubles every 3 years - Brian Stevens, Red hat cto 
+\item KVM and Linux have a head start: oVswitch, OpenStack and Quantum, Emergning s/w network controllers
+\end{itemize}
+
+\subsection{Open Source Cloud Platforms - Marten Mickos, CEO at Eucalyptus Systems}
+\begin{itemize}
+\item 4 open source sitsers: OpenNebula, OpenStack, CloustStack, Eucalyptus
+\item Evolution of cloud types: Public -> Private -> Hybrid -> Mobile
+\item If Amazon is Starbucks, Eucalyptus is the espresso machine, says @martenmickos  Europe
+\item people goes to private clouds from public clouds and data-center
+\item cloud customers look for: BIZ: agility, dependability; TECH: experimentation, participation; FIN: optionality\&control
+\item Marten Mickos, CEO, Eucalyptus Systems pic.twitter.com/XchdEaKM
+\item open clouds saves 80\% money, if compare with private clouds
+\item open cloud features: Innovation, Cross-breeding, Deployments, Contributions, Industry support
+\item open cloud: freedom of environment, scale, deployment
+\end{itemize}
+
+
+\subsection{Scaling an Open Source Community: How we Grew the OpenStack Project - Monty Taylor, Manager of Automation and Deployment at HP}
+\begin{itemize}
+\item OpenStack: Compute, Networkoing, Storage, Dashboard
+\item Monty Taylor, Manager of Automation and Deployment, HP, OpenStack pic.twitter.com/cSVIEzSF
+\item current clouds is very similar to mainframes
+\item AIX, Ultrix, HPUX, Solaris, Irix - they all created just for binding customers to their own hardware - this is why they dead now
+\item OpenStack is done by 132 Companies
+\item OpenStack - Open Source, Design, Development Community
+\item OpenStack "goverment model" is a meritocracy (very popular in OSS btw)
+\item OpenStack Code Review/Code Standards/Consistent technology/Automated Testing/Automated Everything/Constant Vigence
+\end{itemize}
+
+\subsection{Introduction to oVirt Virtualization Management Platform - Itamar Heim, Red Hat}
+\begin{itemize}
+\item oVirt - focused on KVM, management tool with Web UI
+\item oVirt have classic development model: oVirt => Fedora => RHEL
+\item oVirt have small footprint (170Mb Fedora) - to run hypervizor only
+\item High Availability, Live Migration, System Scheduler, Power Saver, Maintence Manager, Image Management, Monitoring\&Reporting...
+\item oVirt could add hosts just in Web UI, will install all required package themself
+\item Itamar Heim, Red Hat pic.twitter.com/RDtGMw21
+\item oVirt supports various types of storage: NFC, iSCSI, Gluster, and many more
+\item oVirt supports not only VNC, but also Spice
+\item oVirt have nice UI for creating pools of VMs
+\item oVirt support for http://spice-space.org/  remote desktop protocol. Looks great!
+\item oVirt also provides "heavy" permission functionality
+\item oVirt heavy integrates glusterfs
+\item oVirt also provider user "portal", where user see what (and how) he can use in cluster
+\item oVirt also provides a lot of reports about resource usage
+\item oVirt have nice RESTful Web Service
+\item even more, oVirt have python SDK, very nice CLI with documentation and autocompletions
+\item oVirt Engine written on Java, PostgreSQL as database, and can be integrated with AD/LDAP
+\item oVirt use libvirt/VDSM on Host/Note, Local/Shared Storage
+\item oVirt could run Linux/Windows - have guest agent for them (single sign on plugin for example)
+\item oVirt Host Agent - VDSM use KSM - "share" memory between different VMs
+\item oVirt High Level Architecture - oVirtWiki http://ow.ly/1Pp7Zg 
+\item its easy to write hook, which do smth between VDSM calls libvirt
+\end{itemize}
+
+\subsection{The OpenStack Project and the OpenStack Foundation - Eileen Evans, HP}
+\begin{itemize}
+\item OpenStack started by Rackspace and NASA in July 2010
+\item There is a big transition, between use OSS internally and contribute to OSS projects, and start OSS project
+\item OpenStack do magor release every 6 month, plans for next release are made at OpenStack summit right after release
+\item OpenStack 4 opens: Source, Design, Devlopment, Community
+\item OpenStack code is available under Apache 2.0 license, and this is forced for all contributions
+\item OpenStack Foundation owns the OpenStack trademark
+\item Eileen Evans, HP pic.twitter.com/TN04v1Cc
+\end{itemize}
+
+\subsection{Cloud Storage Reloaded: Distributed Filesystems (CephFS and GlusterFS) - Udo Seidel}
+\begin{itemize}
+\item Shared FS - Normal business for Linux: network NFS/CIFS; shared disk OCFS2, GFS2; parallel/distributed: Ceph/GlusterFS
+\item recent attention on distributed storage - cloud hype and big data
+\item Operations - important part of the cycle; technical challenge; geeks vs. Enterprise
+\item Object based storage - partition, file, unique id
+\item Ceph and GlusterFS - sufficient community presence, picked up by Enterprise Linux vendors
+\item Ceph and GlusterFS - block storage => storage server (OSD); (POSIX) file system -> Meta data; HA -> replication and distribution
+\item Client Part - (POSIX) file system, Storage level
+\item Parts of ceph: Cluster monitor, md5 cluster, [ ceph ] , OSD Cluster
+\item GlusteFS Storage/Brick server <=> (Meta data I/O, Data I/O). NFS included
+\item ceph(now) and glusterfs (soon) could be integrated with QEMU, to store vm images directly
+\item challnge one: server vs storage
+\item challenge two: infrastructure
+\item challenge three: support (service provider/application support)
+\end{itemize}
+
+\end{document}
